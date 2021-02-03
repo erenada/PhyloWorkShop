@@ -3,21 +3,36 @@
 Where to find data:
 https://www.ncbi.nlm.nih.gov/datasets/
 
-#From NCBI web-site:
+#Go to your favorite diroctory, create a new folder for analyses
+
+mkdir VirusData
+
+#From https://www.ncbi.nlm.nih.gov/datasets/:
 Linux
 
 Download datasets using curl
-curl -o datasets 'https://ftp.ncbi.nlm.nih.gov/pub/datasets/command-line/LATEST/linux-amd64/datasets'`
+curl -o datasets 'https://ftp.ncbi.nlm.nih.gov/pub/datasets/command-line/LATEST/linux-amd64/datasets'
 
 Download dataformat using curl
-`curl -o dataformat 'https://ftp.ncbi.nlm.nih.gov/pub/datasets/command-line/LATEST/linux-amd64/dataformat'`
+curl -o dataformat 'https://ftp.ncbi.nlm.nih.gov/pub/datasets/command-line/LATEST/linux-amd64/dataformat'
 
 Mac
 Download datasets using curl
-`curl -o datasets 'https://ftp.ncbi.nlm.nih.gov/pub/datasets/command-line/LATEST/mac/datasets'`
+curl -o datasets 'https://ftp.ncbi.nlm.nih.gov/pub/datasets/command-line/LATEST/mac/datasets'
 
 Download dataformat using curl
-`curl -o dataformat 'https://ftp.ncbi.nlm.nih.gov/pub/datasets/command-line/LATEST/mac/dataformat'`
+curl -o dataformat 'https://ftp.ncbi.nlm.nih.gov/pub/datasets/command-line/LATEST/mac/dataformat
 
 #To enable execution of datasets and dataformat on Linux and Mac systems, run the following command:
-`chmod +x datasets`
+chmod +x datasets
+
+
+./datasets download virus protein S --geo-location Turkey --filename SARS2-hum-TR-Spike.zip
+
+#go check the .fna file 
+
+#open https://www.ebi.ac.uk/Tools/msa/clustalo/
+
+
+
+
